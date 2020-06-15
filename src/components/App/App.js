@@ -27,7 +27,6 @@ const App = () => {
   const {businesses} = state;
 
   const searchYelp = (term, location, sortBy) => {
-    // console.log(`Search Yelp using the term: ${term}, located at: ${location}, with ${sortBy}`);
     Yelp.search(term, location, sortBy).then(businesses => {
       setState({
         ...state,

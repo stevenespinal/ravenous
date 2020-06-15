@@ -6,12 +6,7 @@ import Business from "../Business/Business";
 const BusinessList = ({businesses}) => {
   return (
     <div className="BusinessList">
-      {businesses && businesses.map((business) => {
-        console.log(business);
-        return (
-          <Business key={business.id} business={business}/>
-        )
-      })}
+      {businesses.map(business => <Business key={business.id} business={business}/>)}
     </div>
   )
 }

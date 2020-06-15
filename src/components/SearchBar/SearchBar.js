@@ -5,8 +5,8 @@ import "./SearchBar.css";
 const SearchBar = ({searchYelp}) => {
 
   const [state, setState] = useState({
-    term: 'Burger King',
-    location: 'New York',
+    term: '',
+    location: '',
     sortBy: 'best_match'
   });
 
